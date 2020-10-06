@@ -1,7 +1,7 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: sans-serif;
+  font-family: "Lato", sans-serif;
   color: rgb(51, 50, 50);
 }
 * {
@@ -137,7 +137,7 @@ select {
   grid-column: 2/4;
   background-color: lightblue;
   z-index: 1;
-  background: url("../images/hero-banner.png");
+  background: url("./hero-banner.png");
   background-position: bottom;
   background-size: cover;
 }
