@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="../font_awesome/css/all.min.css" />
+    <title>Shop Page</title>
+  </head>
+  <body>
+    <div class="section-zero">
+      <ul class="navbar">
+        <li class="logo">
+          <a href="./index.html"><i class="fa fa-home"></i></a>
+        </li>
+        <li class="item"><a href="./index.html">Home</a></li>
+        <li class="item"><a href="./shop.html">Shop</a></li>
+        <li class="item"><a href="./product_details.html">Details</a></li>
+        <li class="item"><a href="./login.html">Login</a></li>
+        <li class="item"><input type="text" placeholder="Search Tweets" /></li>
+        <li class="item">
+          <a href="./cart.html"
+            ><i class="fa fa-shopping-cart"
+              ><small id="cart-count">3</small></i
+            ></a
+          >
+        </li>
+        <li class="item">
+          <a href="./checkout.html"><button>Buy Now</button></a>
+        </li>
+        <li class="toggle">
+          <a href="#"><i onclick="handleToggle()" class="fa fa-bars"></i></a>
+        </li>
+      </ul>
+    </div>
+    <div class="grid-section">
+      <div class="search">
+        <select name="sorting" id="sorting">
+          <option value="default_sorting">Default Sorting</option>
+          <option value="default_sorting">Default Sorting</option>
+          <option value="default_sorting">Default Sorting</option>
+        </select>
+        <select name="show" id="show">
+          <option value="type-one">Type One</option>
+          <option value="type-one">Type One</option>
+          <option value="type-one">Type One</option>
+        </select>
+        <input
+          type="text"
+          name="searchQuery"
+          id="searchQuery"
+          placeholder="Search"
+        />
+      </div>
+      <div class="filter">
+        <div class="browse-categories">
+          <h3>Browse Categories</h3>
+          <div class="category">
+            <input
+              type="radio"
+              name="category"
+              id="category_one"
+              value="category_one"
+            />
+            <label for="category_one">Men (3600)</label>
+          </div>
+          <div class="category">
+            <input
+              type="radio"
+              name="category"
+              id="category_two"
+              value="category_two"
+            />
+            <label for="category_two">Women (3600)</label>
+          </div>
+          <div class="category">
+            <input
+              type="radio"
+              name="category"
+              id="category_three"
+              value="category_three"
+            />
+            <label for="category_three">Accessories (3600)</label>
+          </div>
+          <div class="category">
+            <input
+              type="radio"
+              name="category"
+              id="category_four"
+              value="category_four"
+            />
+            <label for="category_four">Footwear (3600)</label>
+          </div>
+          <div class="category">
+            <input
+              type="radio"
+              name="category"
+              id="category_five"
+              value="category_five"
+            />
+            <label for="category_five">Bay item (3600)</label>
+          </div>
+          <div class="category">
+            <input
+              type="radio"
+              name="category"
+              id="category_six"
+              value="category_six"
+            />
+            <label for="category_five">Electronics (3600)</label>
+          </div>
+          <div class="category">
+            <input
+              type="radio"
+              name="category"
+              id="category_seven"
+              value="category_seven"
+            />
+            <label for="category_five">Food (3600)</label>
+          </div>
+        </div>
+        <div class="product-filter">
+          <h3>Product Filters</h3>
+          <h4>Brands</h4>
+          <div class="category">
+            <input
+              type="radio"
+              name="category_filter"
+              id="category_one"
+              value="category_one"
+            />
+            <label for="category_one">Apple(29)</label>
+          </div>
+          <div class="category">
+            <input
+              type="radio"
+              name="category_filter"
+              id="category_two"
+              value="category_two"
+            />
+            <label for="category_two">Asus(29)</label>
+          </div>
+          <div class="category">
+            <input
+              type="radio"
+              name="category_filter"
+              id="category_three"
+              value="category_three"
+            />
+            <label for="category_three">Gionee(19)</label>
+          </div>
+          <div class="category">
+            <input
+              type="radio"
+              name="category_filter"
+              id="category_four"
+              value="category_four"
+            />
+            <label for="category_four">Micromax(19)</label>
+          </div>
+          <div class="category">
+            <input
+              type="radio"
+              name="category_filter"
+              id="category_five"
+              value="category_five"
+            />
+            <label for="category_five">Samsung(19)</label>
+          </div>
+          <h4>Color</h4>
+          <div class="category">
+            <input
+              type="radio"
+              name="category_color"
+              id="category_one"
+              value="category_one"
+            />
+            <label for="category_one">Black(29)</label>
+          </div>
+          <div class="category">
+            <input
+              type="radio"
+              name="category_color"
+              id="category_two"
+              value="category_two"
+            />
+            <label for="category_two">Black Leather(29)</label>
+          </div>
+          <div class="category">
+            <input
+              type="radio"
+              name="category_color"
+              id="category_three"
+              value="category_three"
+            />
+            <label for="category_three">Black with red(19)</label>
+          </div>
+          <div class="category">
+            <input
+              type="radio"
+              name="category_color"
+              id="category_four"
+              value="category_four"
+            />
+            <label for="category_four">Gold(19)</label>
+          </div>
+          <div class="category">
+            <input
+              type="radio"
+              name="category_color"
+              id="category_five"
+              value="category_five"
+            />
+            <label for="category_five">Spacegrey(19)</label>
+          </div>
+        </div>
+      </div>
+      <div class="product-list">
+        <div class="items">
+          <div class="item">
+            <div class="image">
+              <img src="./product/product1.png" alt="" />
+              <div class="action-buttons">
+                <i class="fa fa-search"></i>
+                <i class="fa fa-shopping-cart"></i>
+                <i class="fa fa-heart"></i>
+              </div>
+            </div>
+            <div class="details">
+              <p>Accesories</p>
+              <p><b>Quartz Belt Watch</b></p>
+              <p>$150.00</p>
+            </div>
+          </div>
+          <div class="item">
+            <div class="image">
+              <img src="./product/product2.png" alt="" />
+              <div class="action-buttons">
+                <i class="fa fa-search"></i>
+                <i class="fa fa-shopping-cart"></i>
+                <i class="fa fa-heart"></i>
+              </div>
+            </div>
+            <div class="details">
+              <p>Beauty</p>
+              <p><b> Women Freshwash</b></p>
+              <p>$150.00</p>
+            </div>
+          </div>
+          <div class="item">
+            <div class="image">
+              <img src="./product/product3.png" alt="" />
+              <div class="action-buttons">
+                <i class="fa fa-search"></i>
+                <i class="fa fa-shopping-cart"></i>
+                <i class="fa fa-heart"></i>
+              </div>
+            </div>
+            <div class="details">
+              <p>Decor</p>
+              <p><b> Room Flash Light</b></p>
+              <p>$150.00</p>
+            </div>
+          </div>
+          <div class="item">
+            <div class="image">
+              <img src="./product/product4.png" alt="" />
+              <div class="action-buttons">
+                <i class="fa fa-search"></i>
+                <i class="fa fa-shopping-cart"></i>
+                <i class="fa fa-heart"></i>
+              </div>
+            </div>
+            <div class="details">
+              <p>Decor</p>
+              <p><b>Room Flash Light</b></p>
+              <p>$150.00</p>
+            </div>
+          </div>
+          <div class="item">
+            <div class="image">
+              <img src="./product/product5.png" alt="" />
+              <div class="action-buttons">
+                <i class="fa fa-search"></i>
+                <i class="fa fa-shopping-cart"></i>
+                <i class="fa fa-heart"></i>
+              </div>
+            </div>
+            <div class="details">
+              <p>Accesories</p>
+              <p><b> Man Office Bag</b></p>
+              <p>$150.00</p>
+            </div>
+          </div>
+          <div class="item">
+            <div class="image">
+              <img src="./product/product6.png" alt="" />
+              <div class="action-buttons">
+                <i class="fa fa-search"></i>
+                <i class="fa fa-shopping-cart"></i>
+                <i class="fa fa-heart"></i>
+              </div>
+            </div>
+            <div class="details">
+              <p>Kids Toy</p>
+              <p><b> Charging Car</b></p>
+              <p>$150.00</p>
+            </div>
+          </div>
+          <div class="item">
+            <div class="image">
+              <img src="./product/product7.png" alt="" />
+              <div class="action-buttons">
+                <i class="fa fa-search"></i>
+                <i class="fa fa-shopping-cart"></i>
+                <i class="fa fa-heart"></i>
+              </div>
+            </div>
+            <div class="details">
+              <p>Accesories</p>
+              <p><b>Blutooth Speaker</b></p>
+              <p>$150.00</p>
+            </div>
+          </div>
+          <div class="item">
+            <div class="image">
+              <img src="./product/product8.png" alt="" />
+              <div class="action-buttons">
+                <i class="fa fa-search"></i>
+                <i class="fa fa-shopping-cart"></i>
+                <i class="fa fa-heart"></i>
+              </div>
+            </div>
+            <div class="details">
+              <p>Kids Toy</p>
+              <p><b> Charging Car</b></p>
+              <p>$150.00</p>
+            </div>
+          </div>
+          <div class="item">
+            <div class="image">
+              <img src="./product/product1.png" alt="" />
+              <div class="action-buttons">
+                <i class="fa fa-search"></i>
+                <i class="fa fa-shopping-cart"></i>
+                <i class="fa fa-heart"></i>
+              </div>
+            </div>
+            <div class="details">
+              <p>Accesories</p>
+              <p><b>Quartz Belt Watch</b></p>
+              <p>$150.00</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="section-eight">
+      <h1>GET UPDATE FROM ANYWHERE</h1>
+      <p>Bearing Void gathering light light his eavening unto dont afraid</p>
+      <div>
+        <input
+          type="text"
+          name="email"
+          id="email"
+          placeholder="Enter Your Email"
+        />
+        <button>Subscribe Now</button>
+      </div>
+    </div>
+    <div class="section-nine">
+      <div class="mission">
+        <h1>Our Mission</h1>
+        <p>
+          So seed seed green that winged cattle in. Gathering thing made fly
+          you're no divided deep moved us lan Gathering thing us land years
+          living. So seed seed green that winged cattle in. Gathering thing made
+          fly you're no divided deep moved
+        </p>
+      </div>
+      <div class="quick-links">
+        <h1>Quick Links</h1>
+        <p>
+          <a href="./index.html">Home</a>
+        </p>
+        <p>
+          <a href="./shop.html">Shop</a>
+        </p>
+      </div>
+      <div class="contact-us">
+        <h1>Contact Us</h1>
+        <p><i class="fa fa-location-arrow"></i> Head Office</p>
+        <p>
+          123, Main Street, Your City
+        </p>
+        <p>
+          <i class="fa fa-phone"></i>
+          Phone Number
+        </p>
+        <p>+123 456 7890 +123 456 7890</p>
+        <p>
+          <i class="fa fa-mail-bulk"></i>
+          Email
+        </p>
+        <p>free@infoexample.com www.infoexample.com</p>
+      </div>
+    </div>
+    <div class="footer">
+      <p>Copyright ©2020</p>
+    </div>
+    <script src="./index.js"></script>
+  </body>
+</html>

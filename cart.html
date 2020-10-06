@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="../font_awesome/css/all.css" />
+    <title>Cart</title>
+  </head>
+  <body>
+    <div class="section-zero">
+      <ul class="navbar">
+        <li class="logo">
+          <a href="./index.html"><i class="fa fa-home"></i></a>
+        </li>
+        <li class="item"><a href="./index.html">Home</a></li>
+        <li class="item"><a href="./shop.html">Shop</a></li>
+        <li class="item"><a href="./product_details.html">Details</a></li>
+        <li class="item"><a href="./login.html">Login</a></li>
+        <li class="item"><input type="text" placeholder="Search Tweets" /></li>
+        <li class="item">
+          <a href="./cart.html"
+            ><i class="fa fa-shopping-cart"
+              ><small id="cart-count">3</small></i
+            ></a
+          >
+        </li>
+        <li class="item">
+          <a href="./checkout.html"><button>Buy Now</button></a>
+        </li>
+        <li class="toggle">
+          <a href="#"><i onclick="handleToggle()" class="fa fa-bars"></i></a>
+        </li>
+      </ul>
+    </div>
+    <div class="cart-products-table">
+      <table>
+        <tr>
+          <th>Product</th>
+          <th>Price</th>
+          <th>Quantity</th>
+          <th>Total</th>
+        </tr>
+        <tr>
+          <td id="t">
+            <img src="./img/cart/cart1.png" alt="" />
+            <span> Bluetooth Spaeker</span>
+          </td>
+          <td>$360.00</td>
+          <td><input type="number" value="1" /></td>
+          <td>$720.00</td>
+        </tr>
+        <tr>
+          <td id="t">
+            <img src="./img/cart/cart2.png" alt="" />
+            <span> Sneaker for Unisex</span>
+          </td>
+          <td>$360.00</td>
+          <td><input type="number" value="1" /></td>
+          <td>$720.00</td>
+        </tr>
+        <tr>
+          <td id="t">
+            <img src="./img/cart/cart3.png" alt="" />
+            <span> Toy Car</span>
+          </td>
+          <td>$360.00</td>
+          <td><input type="number" value="1" /></td>
+          <td>$720.00</td>
+        </tr>
+        <tr>
+          <td style="text-align: right;" colspan="2">Subtotal</td>
+          <td style="text-align: center;" colspan="2">$2160.00</td>
+        </tr>
+      </table>
+    </div>
+    <div class="cart-action-buttons">
+      <button id="update">Update Cart</button>
+      <input type="text" placeholder="Coupon Code" />
+      <button id="apply">Apply</button>
+      <button>Have a Coupon?</button>
+    </div>
+    <div class="shipping-fee">
+      Shipping
+      <p>
+        <label for="shipping-one">Flat Rate: $5.00</label>
+        <input type="radio" name="shipping-fee" id="shipping-one" />
+      </p>
+      <p>
+        <label for="shipping-one">Free Shipping</label>
+        <input type="radio" name="shipping-fee" id="shipping-one" />
+      </p>
+      <p>
+        <label for="shipping-one">Flat Rate: $10.00</label>
+        <input type="radio" name="shipping-fee" id="shipping-one" />
+      </p>
+      <p>
+        <label for="shipping-one">Local Delivery: $2.00</label>
+        <input type="radio" name="shipping-fee" id="shipping-one" />
+      </p>
+      <p>
+        <select name="country" id="country">
+          <option value="a">-- Select a Country --</option>
+          <option value="a">Nigeria</option>
+          <option value="a">South-Africa</option>
+          <option value="a">Ghana</option>
+        </select>
+      </p>
+      <p>
+        <select name="country" id="country">
+          <option value="a">-- Select a State --</option>
+          <option value="a">Lagos</option>
+          <option value="a">Oyo</option>
+        </select>
+      </p>
+      <p><input type="text" placeholder="Postcode/Zipcode" /></p>
+      <button>Update Details</button>
+    </div>
+    <div class="purchase-button">
+      <a href="./shop.html"><button>Continue Shopping</button></a>
+      <a href="./checkout.html"
+        ><button id="checkout-button">Proceed to Checkout</button></a
+      >
+    </div>
+    <div class="section-nine">
+      <div class="mission">
+        <h1>Our Mission</h1>
+        <p>
+          So seed seed green that winged cattle in. Gathering thing made fly
+          you're no divided deep moved us lan Gathering thing us land years
+          living. So seed seed green that winged cattle in. Gathering thing made
+          fly you're no divided deep moved
+        </p>
+      </div>
+      <div class="quick-links">
+        <h1>Quick Links</h1>
+        <p>
+          <a href="./index.html">Home</a>
+        </p>
+        <p>
+          <a href="./shop.html">Shop</a>
+        </p>
+      </div>
+      <div class="contact-us">
+        <h1>Contact Us</h1>
+        <p><i class="fa fa-location-arrow"></i> Head Office</p>
+        <p>
+          123, Main Street, Your City
+        </p>
+        <p>
+          <i class="fa fa-phone"></i>
+          Phone Number
+        </p>
+        <p>+123 456 7890 +123 456 7890</p>
+        <p>
+          <i class="fa fa-mail-bulk"></i>
+          Email
+        </p>
+        <p>free@infoexample.com www.infoexample.com</p>
+      </div>
+    </div>
+    <div class="footer">
+      <p>Copyright ©2020</p>
+    </div>
+    <script src="./index.js"></script>
+  </body>
+</html>

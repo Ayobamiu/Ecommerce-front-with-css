@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="../font_awesome/css/all.min.css" />
+
+    <title>Product Details</title>
+  </head>
+  <body>
+    <div class="section-zero">
+      <ul class="navbar">
+        <li class="logo">
+          <a href="./index.html"><i class="fa fa-home"></i></a>
+        </li>
+        <li class="item"><a href="./index.html">Home</a></li>
+        <li class="item"><a href="./shop.html">Shop</a></li>
+        <li class="item"><a href="./product_details.html">Details</a></li>
+        <li class="item"><a href="./login.html">Login</a></li>
+        <li class="item"><input type="text" placeholder="Search Tweets" /></li>
+        <li class="item">
+          <a href="./cart.html"
+            ><i class="fa fa-shopping-cart"
+              ><small id="cart-count">3</small></i
+            ></a
+          >
+        </li>
+        <li class="item">
+          <a href="./checkout.html"><button>Buy Now</button></a>
+        </li>
+        <li class="toggle">
+          <a href="#"><i onclick="handleToggle()" class="fa fa-bars"></i></a>
+        </li>
+      </ul>
+    </div>
+    <div class="product-details">
+      <div class="image">
+        <img src="./img/product/product1.png" alt="" />
+      </div>
+      <div class="text">
+        <h1>Faded SkyBlu Denim Jeans</h1>
+        <h2>$149.99</h2>
+        <p>Category : Household</p>
+        <p>Availibility : In Stock</p>
+        <hr />
+        <p>
+          Mill Oil is an innovative oil filled radiator with the most modern
+          technology. If you are looking for something that can make your
+          interior look awesome, and at the same time give you the pleasant warm
+          feeling during the winter.
+        </p>
+        <hr />
+        <label for="quantity">Quantity : </label>
+        <input type="number" id="quantity" value="1" />
+        <a href="./cart.html"> <button>Add to Cart</button></a>
+        <p>
+          <i class="fa fa-heart"></i>
+        </p>
+      </div>
+    </div>
+    <div class="onpage-tab">
+      <div class="buttons">
+        <button class="tablink" onclick="openPage('Description',this)">
+          Description
+        </button>
+        <button class="tablink" onclick="openPage('Specification',this)">
+          Specification
+        </button>
+        <button class="tablink" onclick="openPage('Comments',this)">
+          Comments
+        </button>
+        <button
+          class="tablink"
+          id="defaultOpen"
+          onclick="openPage('Reviews',this)"
+        >
+          Reviews
+        </button>
+      </div>
+      <div class="tabcontent" id="Description">
+        <p>
+          Beryl Cook is one of Britain’s most talented and amusing artists
+          .Beryl’s pictures feature women of all shapes and sizes enjoying
+          themselves .Born between the two world wars, Beryl Cook eventually
+          left Kendrick School in Reading at the age of 15, where she went to
+          secretarial school and then into an insurance office. After moving to
+          London and then Hampton, she eventually married her next door
+          neighbour from Reading, John Cook. He was an officer in the Merchant
+          Navy and after he left the sea in 1956, they bought a pub for a year
+          before John took a job in Southern Rhodesia with a motor company.
+          Beryl bought their young son a box of watercolours, and when showing
+          him how to use it, she decided that she herself quite enjoyed
+          painting. John subsequently bought her a child’s painting set for her
+          birthday and it was with this that she produced her first significant
+          work, a half-length portrait of a dark-skinned lady with a vacant
+          expression and large drooping breasts. It was aptly named ‘Hangover’
+          by Beryl’s husband and It is often frustrating to attempt to plan
+          meals that are designed for one. Despite this fact, we are seeing more
+          and more recipe books and Internet websites that are dedicated to the
+          act of cooking for one. Divorce and the death of spouses or grown
+          children leaving for college are all reasons that someone accustomed
+          to cooking for more than one would suddenly need to learn how to
+          adjust all the cooking practices utilized before into a streamlined
+          plan of cooking that is more efficient for one person creating less
+        </p>
+      </div>
+      <div class="tabcontent" id="Specification">
+        <div class="specification">
+          <p>
+            <small>Width</small>
+            <small>128mm</small>
+          </p>
+          <p>
+            <small>Height</small>
+            <small>508mm</small>
+          </p>
+          <p>
+            <small>Depth</small>
+            <small>85mm</small>
+          </p>
+          <p>
+            <small>Weight</small>
+            <small>52gm</small>
+          </p>
+          <p>
+            <small>Quality checking</small>
+            <small>yes</small>
+          </p>
+          <p>
+            <small>Freshness Duration</small>
+            <small>03days</small>
+          </p>
+          <p>
+            <small>When packeting</small>
+            <small>Without touch of hand</small>
+          </p>
+          <p>
+            <small>Each Box contains</small>
+            <small>60pcs</small>
+          </p>
+        </div>
+      </div>
+      <div class="tabcontent" id="Comments">
+        <div class="comment-section">
+          <div class="comment-list">
+            <div class="comment">
+              <div class="comment-section-one">
+                <img src="./product/review-1.png" alt="" />
+                <div>
+                  <p>Blake Ruiz</p>
+                  <small>12th Feb, 2018 at 05:56 pm</small>
+                </div>
+                <button>Reply</button>
+              </div>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione
+                minus maxime tenetur praesentium amet veniam inventore cum quo
+                debitis atque sint, obcaecati id! Asperiores accusantium quia
+                adipisci sapiente voluptatum dicta!
+              </p>
+            </div>
+            <div class="comment">
+              <div class="comment-section-one">
+                <img src="./product/review-2.png" alt="" />
+                <div>
+                  <p>Blake Ruiz</p>
+                  <small>12th Feb, 2018 at 05:56 pm</small>
+                </div>
+                <button>Reply</button>
+              </div>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione
+                minus maxime tenetur praesentium amet veniam inventore cum quo
+                debitis atque sint, obcaecati id! Asperiores accusantium quia
+                adipisci sapiente voluptatum dicta!
+              </p>
+            </div>
+            <div class="comment">
+              <div class="comment-section-one">
+                <img src="./product/review-3.png" alt="" />
+                <div>
+                  <p>Blake Ruiz</p>
+                  <small>12th Feb, 2018 at 05:56 pm</small>
+                </div>
+                <button>Reply</button>
+              </div>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione
+                minus maxime tenetur praesentium amet veniam inventore cum quo
+                debitis atque sint, obcaecati id! Asperiores accusantium quia
+                adipisci sapiente voluptatum dicta!
+              </p>
+            </div>
+          </div>
+          <div class="comment-form">
+            <p>Post a comment</p>
+            <input type="text" placeholder="Your Full Name" />
+            <input type="text" placeholder="Email Address" />
+            <input type="text" placeholder="Phone Number" />
+            <textarea name="message" placeholder="Message" id=""></textarea>
+            <input type="submit" />
+          </div>
+        </div>
+      </div>
+      <div class="tabcontent" id="Reviews">
+        <div class="review-section">
+          <div class="review-list">
+            <div class="overall-review">
+              <div class="overall-review-one">
+                <h3>Overall</h3>
+                <h1 style="color: blue;">4.0</h1>
+                <p>(03 Reviews)</p>
+              </div>
+              <div class="overall-review-two">
+                <h4>Based on 3 Reviews</h4>
+                <p>
+                  5 Star
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  01
+                </p>
+                <p>
+                  4 Star
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  01
+                </p>
+                <p>
+                  3 Star
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  01
+                </p>
+                <p>
+                  2 Star
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  01
+                </p>
+                <p>
+                  1 Star
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  01
+                </p>
+              </div>
+            </div>
+            <div class="review">
+              <div class="review-section-one">
+                <img src="./product/review-1.png" alt="" />
+                <div>
+                  <p>Blake Ruiz</p>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                </div>
+              </div>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione
+                minus maxime tenetur praesentium amet veniam inventore cum quo
+                debitis atque sint, obcaecati id! Asperiores accusantium quia
+                adipisci sapiente voluptatum dicta!
+              </p>
+            </div>
+            <div class="review">
+              <div class="review-section-one">
+                <img src="./product/review-2.png" alt="" />
+                <div>
+                  <p>Blake Ruiz</p>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                </div>
+              </div>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione
+                minus maxime tenetur praesentium amet veniam inventore cum quo
+                debitis atque sint, obcaecati id! Asperiores accusantium quia
+                adipisci sapiente voluptatum dicta!
+              </p>
+            </div>
+            <div class="review">
+              <div class="review-section-one">
+                <img src="./product/review-3.png" alt="" />
+                <div>
+                  <p>Blake Ruiz</p>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                </div>
+              </div>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione
+                minus maxime tenetur praesentium amet veniam inventore cum quo
+                debitis atque sint, obcaecati id! Asperiores accusantium quia
+                adipisci sapiente voluptatum dicta!
+              </p>
+            </div>
+          </div>
+          <div class="review-form">
+            <p>Post a review</p>
+            <input type="text" placeholder="Your Full Name" />
+            <input type="text" placeholder="Email Address" />
+            <input type="text" placeholder="Phone Number" />
+            <textarea name="message" placeholder="Message" id=""></textarea>
+            <input type="submit" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="product-details-popular-section">
+      <p>
+        Popular Item in the Market
+      </p>
+      <h1>Top <span class="underlined">Products</span></h1>
+      <div class="items">
+        <div class="section-of-three">
+          <div class="item">
+            <div class="image">
+              <img src="./product/product-sm-1.png" alt="" />
+            </div>
+            <div class="details">
+              <p><b> Charging Car</b></p>
+              <p>$150.00</p>
+            </div>
+          </div>
+          <div class="item">
+            <div class="image">
+              <img src="./product/product-sm-2.png" alt="" />
+            </div>
+            <div class="details">
+              <p><b>Blutooth Speaker</b></p>
+              <p>$150.00</p>
+            </div>
+          </div>
+          <div class="item">
+            <div class="image">
+              <img src="./product/product-sm-3.png" alt="" />
+            </div>
+            <div class="details">
+              <p><b> Charging Car</b></p>
+              <p>$150.00</p>
+            </div>
+          </div>
+        </div>
+        <div class="section-of-three">
+          <div class="item">
+            <div class="image">
+              <img src="./product/product-sm-1.png" alt="" />
+            </div>
+            <div class="details">
+              <p><b> Charging Car</b></p>
+              <p>$150.00</p>
+            </div>
+          </div>
+          <div class="item">
+            <div class="image">
+              <img src="./product/product-sm-2.png" alt="" />
+            </div>
+            <div class="details">
+              <p><b>Blutooth Speaker</b></p>
+              <p>$150.00</p>
+            </div>
+          </div>
+          <div class="item">
+            <div class="image">
+              <img src="./product/product-sm-3.png" alt="" />
+            </div>
+            <div class="details">
+              <p><b> Charging Car</b></p>
+              <p>$150.00</p>
+            </div>
+          </div>
+        </div>
+        <div class="section-of-three">
+          <div class="item">
+            <div class="image">
+              <img src="./product/product-sm-1.png" alt="" />
+            </div>
+            <div class="details">
+              <p><b> Charging Car</b></p>
+              <p>$150.00</p>
+            </div>
+          </div>
+          <div class="item">
+            <div class="image">
+              <img src="./product/product-sm-2.png" alt="" />
+            </div>
+            <div class="details">
+              <p><b>Blutooth Speaker</b></p>
+              <p>$150.00</p>
+            </div>
+          </div>
+          <div class="item">
+            <div class="image">
+              <img src="./product/product-sm-3.png" alt="" />
+            </div>
+            <div class="details">
+              <p><b> Charging Car</b></p>
+              <p>$150.00</p>
+            </div>
+          </div>
+        </div>
+        <div class="section-of-three">
+          <div class="item">
+            <div class="image">
+              <img src="./product/product-sm-1.png" alt="" />
+            </div>
+            <div class="details">
+              <p><b> Charging Car</b></p>
+              <p>$150.00</p>
+            </div>
+          </div>
+          <div class="item">
+            <div class="image">
+              <img src="./product/product-sm-2.png" alt="" />
+            </div>
+            <div class="details">
+              <p><b>Blutooth Speaker</b></p>
+              <p>$150.00</p>
+            </div>
+          </div>
+          <div class="item">
+            <div class="image">
+              <img src="./product/product-sm-3.png" alt="" />
+            </div>
+            <div class="details">
+              <p><b> Charging Car</b></p>
+              <p>$150.00</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="section-nine">
+      <div class="mission">
+        <h1>Our Mission</h1>
+        <p>
+          So seed seed green that winged cattle in. Gathering thing made fly
+          you're no divided deep moved us lan Gathering thing us land years
+          living. So seed seed green that winged cattle in. Gathering thing made
+          fly you're no divided deep moved
+        </p>
+      </div>
+      <div class="quick-links">
+        <h1>Quick Links</h1>
+        <p>
+          <a href="./index.html">Home</a>
+        </p>
+        <p>
+          <a href="./shop.html">Shop</a>
+        </p>
+      </div>
+      <div class="contact-us">
+        <h1>Contact Us</h1>
+        <p><i class="fa fa-location-arrow"></i> Head Office</p>
+        <p>
+          123, Main Street, Your City
+        </p>
+        <p>
+          <i class="fa fa-phone"></i>
+          Phone Number
+        </p>
+        <p>+123 456 7890 +123 456 7890</p>
+        <p>
+          <i class="fa fa-mail-bulk"></i>
+          Email
+        </p>
+        <p>free@infoexample.com www.infoexample.com</p>
+      </div>
+    </div>
+    <div class="footer">
+      <p>Copyright ©2020</p>
+    </div>
+    <script src="./index.js"></script>
+  </body>
+</html>

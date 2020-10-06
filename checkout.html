@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="../font_awesome/css/all.css" />
+    <title>Checkout</title>
+  </head>
+  <body>
+    <div class="section-zero">
+      <ul class="navbar">
+        <li class="logo">
+          <a href="./index.html"><i class="fa fa-home"></i></a>
+        </li>
+        <li class="item"><a href="./index.html">Home</a></li>
+        <li class="item"><a href="./shop.html">Shop</a></li>
+        <li class="item"><a href="./product_details.html">Details</a></li>
+        <li class="item"><a href="./login.html">Login</a></li>
+        <li class="item"><input type="text" placeholder="Search Tweets" /></li>
+        <li class="item">
+          <a href="./cart.html"
+            ><i class="fa fa-shopping-cart"
+              ><small id="cart-count">3</small></i
+            ></a
+          >
+        </li>
+        <li class="item">
+          <a href="./checkout.html"><button>Buy Now</button></a>
+        </li>
+        <li class="toggle">
+          <a href="#"><i onclick="handleToggle()" class="fa fa-bars"></i></a>
+        </li>
+      </ul>
+    </div>
+    <div class="checkout">
+      <div class="login-new-customer">
+        <p class="login-new-customer__blue_bc">
+          Returning Customer? <a href="./login.html">Click here to login</a>
+        </p>
+        <p>
+          If you have shopped with us before, please enter your details in the
+          boxes below. If you are a new customer, please proceed to the Billing
+          & Shipping section.
+        </p>
+        <input
+          type="text"
+          placeholder="Username or Email*"
+          class="small_size"
+        />
+        <input type="text" placeholder="Password" class="small_size" />
+        <p>
+          <a href="./login.html"><button>Login</button></a>
+          <input type="checkbox" id="checkbox" />
+          <label for="checkbox">Remember me</label>
+        </p>
+        <p>Lost your password?</p>
+      </div>
+      <div class="add-coupon">
+        <p class="login-new-customer__blue_bc">
+          Have a coupon? Click here to enter your code
+        </p>
+        <input type="text" placeholder="Enter Coupon Code" class="big_size" />
+        <p><button>Apply Coupon Code</button></p>
+      </div>
+      <div class="login-new-customer__row">
+        <div class="login-new-customer__column--one">
+          <div class="billing-details">
+            <h3>Billing Details</h3>
+            <hr />
+            <input type="text" class="small_size" />
+            <input type="text" class="small_size" />
+            <input type="text" placeholder="Company Name" class="big_size" />
+            <input type="text" class="small_size" />
+            <input type="text" class="small_size" />
+            <select type="text" class="big_size">
+              <option value="c">Country</option>
+              <option value="c">Country</option>
+              <option value="c">Country</option>
+            </select>
+            <input type="text" class="big_size" />
+            <input type="text" class="big_size" />
+            <select type="text" class="big_size">
+              <option value="d">District</option>
+              <option value="d">District</option>
+              <option value="d">District</option>
+            </select>
+            <input type="text" placeholder="Postcode/ZIP" class="big_size" />
+            <p>
+              <input type="checkbox" id="new-acc" />
+              <label for="new-acc">Create an account?</label>
+            </p>
+          </div>
+          <div class="shipping-details">
+            <h3>Shipping Details</h3>
+            <hr />
+            <input type="checkbox" id="new-acc" />
+            <label for="new-acc"> Ship to a different address?</label>
+            <textarea
+              name="order-note"
+              id="order-note"
+              placeholder="Order Notes"
+              style="display: block; width: 80%; height: 100px;"
+            ></textarea>
+          </div>
+        </div>
+        <div class="login-new-customer__column--two">
+          <div class="order">
+            <h4>Your Order</h4>
+            <hr />
+            <div class="order__row">
+              <p>Fresh Blackberry</p>
+              <p>x 02</p>
+              <p>$720.00</p>
+            </div>
+            <div class="order__row">
+              <p>Fresh Tomatoes</p>
+              <p>x 02</p>
+              <p>$720.00</p>
+            </div>
+            <div class="order__row">
+              <p>Fresh Brocoli</p>
+              <p>x 02</p>
+              <p>$720.00</p>
+            </div>
+            <div class="order__row">
+              <p>SUBTOTAL</p>
+              <p>$2160.00</p>
+            </div>
+            <div class="order__row">
+              <p>SHIPPING</p>
+              <p>Flat Rate: $50.00</p>
+            </div>
+            <div class="order__row">
+              <p>TOTAL</p>
+              <p>$2210.00</p>
+            </div>
+            <input type="checkbox" name="" id="check_payment" />
+            <label for="check_payment">Check Payments</label>
+            <p class="white_bc small_text">
+              Please send a check to Store Name, Store Street, Store Town, Store
+              State / County, Store Postcode.
+            </p>
+            <input type="checkbox" name="" id="paypal" />
+            <label for="paypal">PayPal</label>
+            <p class="white_bc small_text">
+              Pay via PayPal; you can pay with your credit card if you don’t
+              have a PayPal account.
+            </p>
+            <input type="checkbox" name="" id="terms" />
+            <label for="terms"
+              >I’ve read and accept the terms & conditions*</label
+            >
+            <button>Proceed to PayPal</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="./index.js"></script>
+  </body>
+</html>
